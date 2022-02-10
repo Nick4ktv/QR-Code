@@ -1,0 +1,76 @@
+@import url(https://fonts.google.com/specimen/Outfit);
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    /*Primary */
+   --White: hsl(0, 0%, 100%);
+ --Light--gray: hsl(212, 45%, 89%);
+ --Grayish-blue: hsl(220, 15%, 55%);
+ --Dark-blue: hsl(218, 44%, 22%);
+}
+img{
+    max-width: 100%;
+}
+.qr-img{
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+body{
+    font-family: "Outfit", sans-serif;
+    font-size: 15px;
+    background-color: var(--Light--gray);
+    padding: 1.25rem;
+}
+.contain{
+    margin: 1rem;
+    margin-top: 2rem;
+    margin-left: 6rem;
+    padding:.25rem;
+    background-color: var(--White);
+    align-items: center;
+    width: 95%;
+    align-self: center;
+}
+.contain .qr-img{
+    position: relative;
+}
+.top p{
+    display: flex;
+    align-self:center;
+    justify-content: center;
+    font-weight: 700;
+    }
+.bottom p{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    font-weight: 400;
+    color: var(--Light--gray);
+    margin-top: .85rem;
+}
+
+.attribution{
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
+@media(min-width:375px){
+    .contain{
+        width:500px;
+        margin:0 auto 1rem;
+    }
+    .qr-img{
+        max-width: 100%;
+        margin: 0 auto 1rem;
+        height: auto;
+    }
+}
